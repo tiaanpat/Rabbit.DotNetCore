@@ -1,0 +1,13 @@
+#
+.vs/
+*obj/
+*bin/
+
+# MSTest test Results
+#[Tt]est[Rr]esult*/
+#[Bb]uild[Ll]og.*
+
+# NUNIT
+#*.VisualState.xml
+#TestResult.xml
+
