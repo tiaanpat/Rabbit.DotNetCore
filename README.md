@@ -1,2 +1,2 @@
-# rabbit-rpc
-Testing Request/reply pattern with RabbitMQ
+# Rabbit.DotNetCore
+Testing Request/Reply pattern with RabbitMQ
