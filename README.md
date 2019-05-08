@@ -1,2 +1,2 @@
 # Rabbit.DotNetCore
-Testing Request/Reply pattern with RabbitMQ
+Testing a simple send / receive message with RabbitMQ
