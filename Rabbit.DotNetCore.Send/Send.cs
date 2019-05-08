@@ -1,8 +1,8 @@
 ﻿namespace Rabbit.DotNetCore.Send
 {
+    using RabbitMQ.Client;
     using System;
     using System.Text;
-    using RabbitMQ.Client;
 
     class Send
     {

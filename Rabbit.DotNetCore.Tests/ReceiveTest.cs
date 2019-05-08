@@ -1,8 +1,8 @@
 namespace Rabbit.DotNetCore.Tests
 {
-    using System.Text;
     using NUnit.Framework;
     using RabbitMQ.Client;
+    using System.Text;
 
     [TestFixture]
     public class ReceiveTests

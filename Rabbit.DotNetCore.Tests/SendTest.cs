@@ -1,9 +1,9 @@
 ﻿namespace Rabbit.DotNetCore.Tests
 {
-    using System.Text;
-    using System.Threading;
     using NUnit.Framework;
     using RabbitMQ.Client;
+    using System.Text;
+    using System.Threading;
 
     [TestFixture]
     public class SendTest

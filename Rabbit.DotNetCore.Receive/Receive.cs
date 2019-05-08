@@ -1,9 +1,9 @@
 ﻿namespace Rabbit.DotNetCore.Receive
 {
-    using System;
-    using System.Text;
     using RabbitMQ.Client;
     using RabbitMQ.Client.Events;
+    using System;
+    using System.Text;
 
     class Receive
     {
@@ -16,10 +16,10 @@
                 channel.QueueDeclare(queue: "hello", durable: false, exclusive: false, autoDelete: false, arguments: null);
 
                 var consumer = new EventingBasicConsumer(channel);
-                consumer.Received += (model, ea) =>
+                consumer.Received += (model, e) =>
                 {
-                    var body = ea.Body;
-                    var message = Encoding.UTF8.GetString(body);
+                    byte[] body = e.Body;
+                    string message = Encoding.UTF8.GetString(body);
                     Console.WriteLine($"Hello {message}, I am your father!");
                 };
 
